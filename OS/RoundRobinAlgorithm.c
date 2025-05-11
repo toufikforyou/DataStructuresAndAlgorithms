@@ -4,6 +4,7 @@
 int main()
 {
     int n, quantum, total = 0;
+    float avgwt = 0, avgtat = 0;
     int bt[20], wt[20], tat[20], rem_bt[20], p[20];
 
     printf("Enter number of processes (Max 20): ");
@@ -53,8 +54,6 @@ int main()
 
     for (int i = 0; i < n; i++)
         tat[i] = bt[i] + wt[i];
-
-    float avgwt = 0, avgtat = 0;
 
     printf("\nProcess\t\tBurst Time\tWaiting Time\tTurnaround Time");
     for (int i = 0; i < n; i++)
